@@ -210,7 +210,23 @@ body {
 
 /* ---- price list ---- */
 .price-list {
-    background: #F1F1F1;
+  background: #F1F1F1;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.price-list-title{
+  font-size:25px;
+  color:rgba(0,0,0,0.5);
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.linia{
+  height: 8px;
+  width: 31.1%;
+  background-color: #27C7AB;
+  margin-bottom: 50px;
 }
 .price-list-cnt {
     display: flex;
@@ -304,7 +320,9 @@ body {
 }
 
 /* ---- section contact us ---- */
-.contact-us {}
+.contact-us {
+  padding-top: 50px;
+}
 .contact-us-form {
     margin-top:40px;
     display: flex;
@@ -384,4 +402,25 @@ body {
     vertical-align: top;
     padding:5px 0 0 5px;
     color:#aaa;
+}
+.footer_parent{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+.footer_text p{
+  color:rgba(0,0,0,0.3);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 13px;
+}
+.footer_icons a{
+  display: inline-block;
+}
+.footer_page_logo{
+  padding-left: 75px;
 }
