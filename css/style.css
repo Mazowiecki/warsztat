@@ -14,12 +14,13 @@
     border-radius:5px;
     background: #24BA9F;
     text-transform: uppercase;
-    font-size:20px;
+    font-size:16px;
     padding:10px 30px;
     color:#fff;
     border:0;
     display: inline-block;
     text-decoration: none;
+    font-weight: 600;
 }
 .section-title {
     /* tutaj dorobic wyglad tytulow sekcji */
@@ -137,6 +138,53 @@ body {
     display: flex;
     height:100%;
 }
+.main-slider-cnt{
+  position: relative;
+}
+/*  slide 1 */
+.main-slider-slide1{
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.main-slider-slide1-h1{
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+.main-slider-slide1-h1 .span1{
+  color:#24BA9F;
+  font-weight: 700;
+}
+.main-slider-slide1-h1 .span2{
+  color:#24BA9F;
+  font-weight: 700;
+}
+.main-slider-slide1 p{
+  padding-top: 20px;
+  text-align: center;
+}
+.slide1_button{
+  margin-left:150px;
+  margin-top: 20px;
+}
+/*slide 2 */
+.main-slider-slide2{
+  position: absolute;
+}
+.main-slider-slide3{
+  position: absolute;
+}
+.main-slider-slide4{
+  position: absolute;
+}
+.main-slider-slide5{
+  position: absolute;
+}
 .main-slider-prev,
 .main-slider-next {
     width:50px;
@@ -148,7 +196,6 @@ body {
     align-items: center;
 }
 .main-slider-cnt {
-    background: yellow;
     flex-grow: 1;
     position: relative;
 }
@@ -162,24 +209,42 @@ body {
 
 
 /* ---- pictures list ---- */
-.pictures-list {}
+.pictures-list-parent{
+  display: flex;
+  justify-content: space-between;
+}
+.pictures-list {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
 .picture-cnt {
     position: relative;
     display: inline-block;
     overflow: hidden;
 }
+.picture-cnt h3{
+  color: black;
+  font-weight: 600;
+}
+.picture-linia{
+    height: 8px;
+    width: 45%;
+    background-color: #27C7AB;
+    margin-bottom: 80px;
+  }
+}
 .picture-cnt img {
     position: relative;
-    transition: 0.5s all;
 }
 .picture-cnt:hover img {
     transform: scale(1.2,1.2);
+    transition: 0.5s all;
 }
 .picture-cnt .picture-cnt-description {
     position:absolute;
     padding:10px;
     left:0;
-    top:120px;
+    top:140px;
     background: rgba(255,255,255,0.5);
     height:70px;
     width:100%;
@@ -358,7 +423,22 @@ body {
 .price-list-box.active .price-list-box-price .price-text {
     color:#27C7AB
 }
-
+.active-price-list-btn {
+    font-family: 'Raleway', sans-serif;
+    border-radius:5px;
+    background: white;
+    text-transform: uppercase;
+    font-size:20px;
+    padding:10px 30px;
+    color:#27C7AB;
+    border:0;
+    display: inline-block;
+    text-decoration: none;
+    font-size:15px;
+    padding: 4px 25px;
+    margin-top:auto;
+    font-weight: 600;
+}
 /* ---- section contact us ---- */
 .contact-us {
   padding-top: 50px;
